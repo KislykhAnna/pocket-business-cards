@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#e8641b"
+                    android:gravity="right|center_vertical" />
+
+                <com.miguelcatalan.materialsearchview.MaterialSearchView
+                    android:id="@+id/search_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    app:searchBackIcon="@drawable/ic_action_navigation_arrow_back_inverted"
+                    app:searchBackground="@color/colorOrange"
+                    app:searchCloseIcon="@drawable/ic_action_navigation_close_inverted"
+                    app:searchSuggestionBackground="@color/colorOrange"
+                    app:searchSuggestionIcon="@drawable/ic_suggestion">
+
+                </com.miguelcatalan.materialsearchview.MaterialSearchView>
+
+            </RelativeLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <include
+            layout="@layout/content_base"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button"
+            android:clickable="true"
+            app:backgroundTint="#e8641b"
+            app:srcCompat="@drawable/ic_add" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.v4.widget.DrawerLayout>

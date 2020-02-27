@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Pocket Business Cards</string>
+    <string name="search_title">Search</string>
+    <string name="search_hint">Поиск...</string>
+
+    <string name="menu_item_own_business_card">Мои визитки</string>
+
+    <string name="view_navigation_open">Open</string>
+    <string name="view_navigation_close">Close</string>
+    <string name="tab_item_create_new_card">Новая визитная карточка</string>
+    <string name="tab_item_own_business_card">Мои визитные карточки</string>
+</resources>
